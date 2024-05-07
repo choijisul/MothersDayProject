@@ -117,7 +117,7 @@ body * { touch-action: none; }
     }
     
     .polariod{
-        margin-top: 3%;
+        margin-top: 0%;
         margin-left: 40%;
         width: 45%;
         transform: rotate(18deg); 
