@@ -1,0 +1,27 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body { overflow: hidden; }
+body * { touch-action: none; }
+
+.backgroundDiv{
+    background-color: #9a7a7a; 
+    flex-direction: column;
+    width: 100vw; 
+    height: 100vh; 
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.background{
+    z-index: 0;
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 900px) {
+    
+}

@@ -1,0 +1,94 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+body { overflow: hidden; }
+body * { touch-action: none; }
+
+.backButton{
+    margin: 20px;
+    z-index: 3;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.backgroundDiv{
+    background-color: #9a7a7a; 
+    flex-direction: column;
+    width: 100vw; 
+    height: 100vh; 
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.background{
+    z-index: 0;
+    width: 100%;
+    height: auto;
+}
+
+.letterDiv{
+    z-index: 1;
+    width: 30%;
+    height: auto;
+    position: absolute;
+    /* background-color: rgb(172, 215, 200); */
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -10%);
+}
+
+.letter{
+    z-index: 2;
+    width: 100%;
+    position: absolute;
+    border: 3px solid rgba(83, 63, 22, 0.7); 
+    box-shadow: 0px 0px 10px 5px rgba(77, 71, 71, 0.5); 
+}
+
+.letterWrite{
+    width: 80%;
+    padding-top: 20%;
+    padding-left: 10%;
+    z-index: 3;
+    position: absolute;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.hr {
+    border: none;
+    padding-bottom: 5px;
+    border-top: 1.6px solid rgb(97, 80, 80);
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 900px) {
+    .backButton{
+        margin: 10px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .letterDiv{
+        width: 80%;
+        top: 25%;
+        transform: translate(-50%, -25%);
+    }
+
+    .letterWrite{
+        font-size: 12px;
+        font-weight: 500;
+    }
+    
+    .hr {
+        padding-bottom: 2px;
+        border-top: 1.4px solid rgb(97, 80, 80);
+        margin: 8px 0;
+    }
+    
+}
