@@ -1,0 +1,128 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body { overflow: hidden; }
+body * { touch-action: none; }
+
+.homeDiv{
+    background-color: #9a7a7a; 
+    flex-direction: column;
+    width: 100vw; 
+    height: 100vh; 
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.homeBackground{
+    z-index: 0;
+    width: 100%;
+    height: auto;
+    /* position: absolute; */
+}
+
+.homeBorder{
+    z-index: 1;
+    width: 70%;
+    height: 80%;
+    margin-left: 15%;
+    margin-top: 5%;
+    position: absolute;
+    border: 3px solid rgba(83, 63, 22, 0.7); 
+    box-shadow: 0px 0px 10px 5px rgba(77, 71, 71, 0.5); 
+}
+
+.iconDiv{
+    z-index: 2;
+    width: 60%;
+    height: 70%;
+    margin-left: 20%;
+    margin-top: 7%;
+    position: absolute;
+    /* background-color: rgb(172, 215, 200); */
+    flex-direction: row;
+}
+
+.envelopeIconDiv{
+    z-index: 3;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    /* background-color: rgb(140, 127, 255); */
+}  
+
+.photoIconDiv{
+    z-index: 3;
+    width: 50%;
+    height: 100%;
+    margin-left: 50%;
+    position: absolute;
+    /* background-color: rgb(183, 196, 116); */
+}
+
+.envelope{
+    margin-top: 18%;
+    margin-left: 5%;
+    width: 80%;
+    height: auto;
+    transform: rotate(-15deg); 
+    box-shadow: 0px 0px 10px 5px rgba(77, 71, 71, 0.3); 
+}
+
+.polariod{
+    margin-top: 43%;
+    margin-left: 25%;
+    width: 55%;
+    height: auto;
+    transform: rotate(12deg); 
+    box-shadow: 0px 0px 10px 5px rgba(77, 71, 71, 0.3); 
+}
+
+/* 반응형 - 폰 */
+@media screen and (max-width: 900px) {
+    .homeBorder{
+        width: 80%;
+        height: 60%;
+        margin-left: 10%;
+        margin-top: 20%;
+    }
+
+    .iconDiv{
+        width: 78%;
+        height: 56%;
+        margin-left: 12%;
+        margin-top: 22%;
+        flex-direction: column;
+    }
+
+    .envelopeIconDiv{
+        width: 100%;
+        height: 50%;
+    }  
+    
+    .photoIconDiv{
+        width: 100%;
+        height: 50%;
+        margin-left: 0%;
+        margin-top: 80%;
+    }
+
+    .envelope{
+        margin-top: 20%;
+        margin-left: 10%;
+        width: 55%;
+        transform: rotate(-22deg); 
+    }
+    
+    .polariod{
+        margin-top: 3%;
+        margin-left: 40%;
+        width: 45%;
+        transform: rotate(18deg); 
+    }
+    
+    
+
+}
