@@ -7,12 +7,18 @@ body, html {
 body { overflow: hidden; }
 body * { touch-action: none; }
 
-.backButton{
+.backButton {
     margin: 20px;
     z-index: 3;
     width: 100px;
     height: 100px;
     position: absolute;
+    background-color: transparent; 
+    border: none; 
+}
+
+.backIcon{
+    width: 100%;
 }
 
 .backgroundDiv{

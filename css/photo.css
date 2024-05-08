@@ -1,27 +1,131 @@
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
+
 }
 
-body { overflow: hidden; }
-body * { touch-action: none; }
+body {
+    overflow: hidden;
+}
 
-.backgroundDiv{
-    background-color: #9a7a7a; 
+body * {
+    touch-action: none;
+}
+
+.backButton {
+    margin: 20px;
+    z-index: 3;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: transparent; 
+    border: none; 
+}
+
+.backIcon{
+    width: 100%;
+}
+
+.backgroundDiv {
+    background-color: #9a7a7a;
     flex-direction: column;
-    width: 100vw; 
-    height: 100vh; 
+    width: 100vw;
+    height: 100vh;
     display: flex;
     margin: 0;
     padding: 0;
 }
 
-.background{
+.background {
     z-index: 0;
     width: 100%;
     height: auto;
 }
 
+.homeBorder {
+    z-index: 1;
+    width: 70%;
+    height: 80%;
+    margin-left: 15%;
+    margin-top: 5%;
+    position: absolute;
+    border: 3px solid rgba(83, 63, 22, 0.7);
+    box-shadow: 0px 0px 10px 5px rgba(77, 71, 71, 0.5);
+}
+
+.imgDiv {
+    /* background-color: #9a7a7a; */
+    z-index: 2;
+    position: absolute;
+    margin-top: 6%;
+    margin-left: 23%;
+    width: 54%;
+    height: 75%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0;
+    max-height: 300%;
+    overflow-y: scroll;
+}
+
+/* 스크롤 */
+.imgDiv::-webkit-scrollbar {
+    width: 15px;
+}
+
+.imgDiv::-webkit-scrollbar-thumb {
+    background: rgb(110, 83, 60);
+    /* 스크롤바 색상 */
+    border-radius: 10px;
+    /* 스크롤바 둥근 테두리 */
+}
+
+.imgDiv::-webkit-scrollbar-track {
+    background: rgba(220, 20, 60, .1);
+    /*스크롤바 뒷 배경 색상*/
+}
+
+.img_container {
+    /* background-color: #b15d5d; */
+    z-index: 3;
+    margin-left: 2%;
+    width: 93%;
+    height: auto;
+    margin: 5px;
+}
+
+.img {
+    border: 2px solid rgba(83, 63, 22, 0.7);
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 5px 5px rgba(77, 71, 71, 0.3);
+    transition: transform 0.6s ease; /* Add transition for smooth scaling */
+}
+
+.img:hover {
+    transform: scale(1.05); /* Scale the image by 110% on hover */
+}
+
+
 @media screen and (max-width: 900px) {
-    
+    .backButton {
+        margin: 10px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .homeBorder {
+        width: 70%;
+        height: 60%;
+        margin-left: 15%;
+        margin-top: 25%;
+    }
+
+    .imgDiv {
+        margin-top: 28%;
+        margin-left: 18%;
+        width: 65%;
+        height: 55%;
+    }
 }

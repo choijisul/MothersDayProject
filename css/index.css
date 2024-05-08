@@ -69,6 +69,11 @@ body * { touch-action: none; }
     height: auto;
     transform: rotate(-15deg); 
     box-shadow: 0px 0px 10px 5px rgba(77, 71, 71, 0.3); 
+    transition: transform 0.6s ease; 
+}
+
+.envelope:hover {
+    transform: scale(1.05); 
 }
 
 .polariod{
@@ -78,6 +83,11 @@ body * { touch-action: none; }
     height: auto;
     transform: rotate(12deg); 
     box-shadow: 0px 0px 10px 5px rgba(77, 71, 71, 0.3); 
+    transition: transform 0.7s ease; 
+}
+
+.polariod:hover {
+    transform: scale(1.1); 
 }
 
 /* 반응형 - 폰 */
