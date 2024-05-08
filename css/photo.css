@@ -116,16 +116,38 @@ body * {
     }
 
     .homeBorder {
-        width: 70%;
+        width: 75%;
         height: 60%;
-        margin-left: 15%;
-        margin-top: 25%;
+        margin-left: 11%;
+        margin-top: 30%;
     }
 
     .imgDiv {
-        margin-top: 28%;
-        margin-left: 18%;
-        width: 65%;
+        margin-top: 34%;
+        margin-left: 14%;
+        width: 70%;
         height: 55%;
+        overflow-x: hidden
     }
+    
+    .img:hover {
+        transform: scale(1.1); 
+    }
+
+    .imgDiv::-webkit-scrollbar {
+        width: 7px;
+    }
+    
+    .imgDiv::-webkit-scrollbar-thumb {
+        background: rgb(110, 83, 60);
+        /* 스크롤바 색상 */
+        border-radius: 10px;
+        /* 스크롤바 둥근 테두리 */
+    }
+    
+    .imgDiv::-webkit-scrollbar-track {
+        background: rgba(220, 20, 60, .1);
+        /*스크롤바 뒷 배경 색상*/
+    }
+    
 }
